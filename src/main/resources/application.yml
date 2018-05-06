@@ -1,0 +1,12 @@
+# Como optamos pelo padrão de arquivos .yml podemos deletar o arquivo application.properties.
+server:
+  port: 9090 # porta em que a aplicação irá subir
+
+# Repositório git que será usado para fornecer os arquivos que o nosso Servidor de Configuração irá
+#  disponibilizar para os outros Microservices via HTTP.
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/AndersonCosta2203/delivery-configs

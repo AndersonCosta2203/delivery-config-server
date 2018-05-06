@@ -1,0 +1,9 @@
+# Iinformar somente o nome da aplicação.
+# Como estamos tratando de uma aplicação distribuída com o Spring Cloud,
+#  essa informação é muito importante porque funcionará como um DNS quando uma instância
+#  dessa aplicação for registrada no Service Registry.
+# Os outros MicroServices também consultarão o Service Registry utilizando este nome,
+#  pois o host da instância pode ser dinâmico.
+spring:
+  application:
+    name: delivery-config-server
